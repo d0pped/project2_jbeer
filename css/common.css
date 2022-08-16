@@ -14,6 +14,7 @@
 #header .down ul{display: flex; justify-content: flex-end;}
 #header .down ul li{margin-left: 15px;margin-top: 20px;}
 #header .down ul li a{padding: 4px 20px; background: coral; border-radius: 20px 20px; color: white; text-decoration: none; font-weight: bolder;}
+#header .down ul li .reserv{padding: 4px 20px; background: rgb(17, 0, 255); border-radius: 20px 20px; color: white; text-decoration: none; font-weight: bolder;}
 
 
 #header .link{text-align: center; clear: both; padding-bottom: 34px;}
@@ -28,22 +29,22 @@
 
 
 
-/* #content .content1{} MP4 */
+#content .content1 video{max-width: 100%;} 
 #content p{font-size: 18px; color: white; line-height: 2;}
 #content p span{font-weight: bold;}
 #content .con_box{    display: flex;    justify-content: center;    align-items: center;}
 
 #content .content2{background: url(../img/content_1bg.png) no-repeat;width: 100%; height: 593px; background-size: cover;}
 .content2 .con_right{float: left;}
-.content2 .con_right img{height: 173px;padding-bottom: 110px;}
+.content2 .con_right img{height: 173px;padding-bottom: 110px;padding-top: 100px;}
 .content2 .con_left{float: left;}
-.content2 .con_left img{height: 400px;}
+.content2 .con_left img{height: 400px;padding-top: 100px;}
 
 #content .content3{background: url(../img/content_2bg.png) no-repeat;width: 100%; height: 593px; background-size: cover;}
 .content3 .con_right{float: left;}
-.content3 .con_right img{height: 86px;padding-bottom: 130px;}
+.content3 .con_right img{height: 86px;padding-bottom: 130px;padding-top: 100px;}
 .content3 .con_left{float: left;}
-.content3 .con_left img{height: 400px;}
+.content3 .con_left img{height: 400px; padding-top: 100px;}
 
 #content .content4{background: url(../img/content_3bg.png) no-repeat;width: 100%; height: 593px; background-size: cover;}
 .content4 .con_right{float: left;}
@@ -59,14 +60,41 @@
 .content5 .con_left img{height: 400px;}
 
 #content .buy p{color: #1ecad3; text-align: center; padding: 56px 0 20px 0;}
-#content .shop_banner div{height: 84px; float: left;}
+
+
+#content .banner_box{width: ; height: 84px; margin-bottom: 133px; overflow: hidden; white-space: nowrap;} 
+/* overflow: hidden; white-space: nowrap; */
+.shop_banner{}
+#content .shop_banner{animation: marquee 52s linear infinite; transform: translateX(0);}
+#content .shop_banner .ban_shop img{min-height: 59px;height: 59px; padding: 7.5px; float: left;}
+
+@keyframes marquee{
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }}
+
 
 /* ----------------------------------//content-------------------------------------- */
 #footer{clear: both;}
 
 
-#footer .footer_link ul li{float: left; margin: 0 15px;}
+#footer .footer_link ul li{float: left; margin: 0 15px; font-size: 14px;}
 #footer .footer_link ul li a{text-decoration: none; color: #666;}
 #footer .footer_link ul li a span{font-weight: bold;}
-#footer .address{ clear: both;}
+
+
+#footer .right_sns{float: right; overflow: hidden;}
+#footer .right_sns div{float: left; margin-right: 10px;} 
+#footer .right_sns div img>*{width: 190px;} 
+
+#footer .address{clear: both; font-size: 13px; color: #999;margin: 0 15px;}
+#footer .address span{clear: both; font-size: 11px;}
+
+
+
+
 /* ----------------------------------//footer-------------------------------------- */
