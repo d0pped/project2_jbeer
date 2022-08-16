@@ -13,18 +13,35 @@
 
 #header .down ul{display: flex; justify-content: flex-end;}
 #header .down ul li{margin-left: 15px;margin-top: 20px;}
-#header .down ul li a{padding: 4px 20px; background: coral; border-radius: 20px 20px; color: white; text-decoration: none; font-weight: bolder;}
-#header .down ul li .reserv{padding: 4px 20px; background: rgb(17, 0, 255); border-radius: 20px 20px; color: white; text-decoration: none; font-weight: bolder;}
+#header .down ul li a{padding: 4px 20px; background: #ff7e6b; border-radius: 20px 20px; color: white; text-decoration: none; font-weight: bolder;}
+#header .down ul li a:hover{padding: 4px 20px; background: white; color: #ff7e6b; border: 1px solid #ff7e6b;}
+#header .down ul li .reserv{padding: 4px 20px; background: #1ecad3; border-radius: 20px 20px; color: white; text-decoration: none; font-weight: bolder;}
+#header .down ul li .reserv:hover{background: #10adb5; color: white; border: none;}
 
 
-#header .link{text-align: center; clear: both; padding-bottom: 34px;}
-#header .link ul{display: flex; justify-content: center;}
-#header .link ul li{padding: 0px 50px;}
-#header .link ul li a{justify-content: center; text-decoration: none; color: #666; font-weight: bold; font-size: 1em;letter-spacing: -0.5px;}
-#header .link ul li a:hover{color: rgb(163, 163, 163);}
+#header .gnb{text-align: center; clear: both; padding-bottom: 34px;}
+#header .gnb ul{display: flex; justify-content: center;}
+#header .gnb ul li{padding: 0px 50px;}
+#header .gnb ul li a{justify-content: center; text-decoration: none; color: #666; font-weight: bold; font-size: 14px;letter-spacing: -0.5px;}
+#header .gnb ul li a:hover{color: rgb(163, 163, 163);}
+
+.gnb li:last-child a {padding-right: 0;}
+
+.gnb li:hover .depth {display: block;}
+.gnb .depth{position: absolute;left: 0;top: 213px;width: 100%;background: #e5e7eb;z-index: 100;display: none;}
+.gnb .submenu{width: 1050px;margin: 0 auto;text-align: left;}
+
+.depth .submenu {box-sizing: border-box;}
+
+.depth .submenu li {display: inline;}
+.depth .submenu li a {font-size: 14px;display: inline-block;padding: 10px;}
+.depth .submenu li a:hover {background: #1ecad3;color: white !important;}
+.depth .submenu li:last-child a {padding-right: 0;}
 
 /* ----------------------------------//header-------------------------------------- */
-.side{position: fixed;top: 90%;right: 2%;}
+.side{position: fixed;top: 83%;right: 1.5%;}
+.side a img{width: 60px; margin-bottom: 5px;}
+.side .scrolltop{display: none;}
 /* ----------------------------------//sidemenu-------------------------------------- */
 
 
@@ -62,7 +79,7 @@
 #content .buy p{color: #1ecad3; text-align: center; padding: 56px 0 20px 0;}
 
 
-#content .banner_box{height: 84px; margin-bottom: 133px; overflow: hidden; white-space: nowrap;} 
+#content .banner_box{height: 84px; overflow: hidden; white-space: nowrap;} 
 #content .shop_banner{animation: marquee 52s linear infinite; transform: translateX(0);}
 #content .shop_banner .ban_shop img{min-height: 59px;height: 59px; padding: 7.5px; float: left;}
 
@@ -77,19 +94,21 @@
 
 
 /* ----------------------------------//content-------------------------------------- */
-#footer{clear: both;}
+#footer{clear: both; margin-top: 133px; margin-bottom: 50px;}
 
 
-#footer .footer_link ul li{float: left; margin: 0 15px; font-size: 14px;}
+#footer .footer_link ul li{float: left; margin: 0 15px 15px 0; font-size: 14px; height: 40px; padding: 0 15px;}
+.footer_link .left_link {margin-left: 20px;}
 #footer .footer_link ul li a{text-decoration: none; color: #666;}
 #footer .footer_link ul li a span{font-weight: bold;}
 
 
-#footer .right_sns{float: right; overflow: hidden;}
-#footer .right_sns div{float: left; margin-right: 10px;} 
-#footer .right_sns div img>*{width: 190px;} 
+#footer .right_sns{float: right;}
+#footer .right_sns div{float: left; margin-right: 10px;}
+#footer .right_sns ul li img{height: 38px;}
 
-#footer .address{clear: both; font-size: 13px; color: #999;margin: 0 15px;}
+
+#footer .address{clear: both; font-size: 13px; color: #999;margin: 0 20px; line-height: 2;}
 #footer .address span{clear: both; font-size: 11px;}
 
 

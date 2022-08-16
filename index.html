@@ -8,6 +8,7 @@
     <title>제주맥주</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -15,7 +16,7 @@
         <header id="header">
             <div class="container">
                 <div class="menu_up">
-                    <div class="logo"><img src="img/logo.png" alt=""></div>
+                    <div class="logo"><a href="index.html"><img src="img/logo.png" alt=""></a></div>
                     <div class="menu_side">
                         <div class="up">
                             <ul>
@@ -33,22 +34,41 @@
                         </div>
                     </div>
                 </div>
-                <div class="link">
-                    <ul>
-                        <li><a href="#">EVENT</a></li>
-                        <li><a href="#">JEJU BEER LIFE</a></li>
-                        <li><a href="#">COLLABORATION</a></li>
-                        <li><a href="#">SHOP</a></li>
-                        <li><a href="#">BREWERY</a></li>
-                    </ul>
-                </div>
+                <nav>
+                    <div class="gnb">
+                        <ul>
+                            <li><a href="#">EVENT</a></li>
+                            <li><a href="#">JEJU BEER LIFE</a>
+                                <div class="depth depth2_1">
+                                    <ul class="submenu">
+                                        <li><a href="#">한달살기 이벤트</a></li>
+                                        <li><a href="#">제주맥주 라이프</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">COLLABORATION</a></li>
+                            <li><a href="#">SHOP</a></li>
+                            <li><a href="#">BREWERY</a>
+                                <div class="depth depth5_1">
+                                    <ul class="submenu">
+                                        <li><a href="#">양조장 소개</a></li>
+                                        <li><a href="#">예약</a></li>
+                                        <li><a href="#">공지사항</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
             <!-- //headermenu -->
             <div class="side">
                 <ul>
-                    <li><a href="#">Messanger</a></li>
-                    <li><a href="#">Share</a></li>
-                    <li><a href="#">Go to top</a></li>
+                    <li class="chat"><a href="#"><img src="img/button-chat.png" alt=""></a></li>
+                    <li class="share"><a href="#"><img src="img/button-share.png" alt=""></a></li>
+                    <div class="scrolltop">
+                        <li class="top"><a href="#"><img src="img/button-top.png" alt=""></a></li>
+                    </div>
                 </ul>
             </div>
             <!-- //sidemenu -->
@@ -118,58 +138,62 @@
             <div class="buy">
                 <p>제주맥주는<br><span>전국 편의점 및 대형마트</span>에서 만나보실 수 있습니다.</p>
             </div>
-                <div class="banner_box">
-                    <div class="shop_banner">
-                        <div class="ban_shop"><img src="img/shop_banner1.jpg" alt=""></div>
-                        <div class="ban_shop"><img src="img/shop_banner2.jpg" alt=""></div>
-                        <div class="ban_shop"><img src="img/shop_banner3.jpg" alt=""></div>
-                        <div class="ban_shop"><img src="img/shop_banner4.jpg" alt=""></div>
-                        <div class="ban_shop"><img src="img/shop_banner5.jpg" alt=""></div>
-                        <div class="ban_shop"><img src="img/shop_banner6.jpg" alt=""></div>
-                        <div class="ban_shop"><img src="img/shop_banner7.jpg" alt=""></div>
-                        <div class="ban_shop"><img src="img/shop_banner8.jpg" alt=""></div>
-                        <div class="ban_shop"><img src="img/shop_banner9.jpg" alt=""></div>
-                        <div class="ban_shop"><img src="img/shop_banner10.jpg" alt=""></div>
-                        <div class="ban_shop"><img src="img/shop_banner11.jpg" alt=""></div>
-                        <div class="ban_shop"><img src="img/shop_banner12.jpg" alt=""></div>
-                        <div class="ban_shop"><img src="img/shop_banner13.jpg" alt=""></div>
-                    </div>
-                    <div class="shop_banner">
-                        <div class="ban_shop"><img src="img/shop_banner1.jpg" alt=""></div>
-                        <div class="ban_shop"><img src="img/shop_banner2.jpg" alt=""></div>
-                        <div class="ban_shop"><img src="img/shop_banner3.jpg" alt=""></div>
-                        <div class="ban_shop"><img src="img/shop_banner4.jpg" alt=""></div>
-                        <div class="ban_shop"><img src="img/shop_banner5.jpg" alt=""></div>
-                        <div class="ban_shop"><img src="img/shop_banner6.jpg" alt=""></div>
-                        <div class="ban_shop"><img src="img/shop_banner7.jpg" alt=""></div>
-                        <div class="ban_shop"><img src="img/shop_banner8.jpg" alt=""></div>
-                        <div class="ban_shop"><img src="img/shop_banner9.jpg" alt=""></div>
-                        <div class="ban_shop"><img src="img/shop_banner10.jpg" alt=""></div>
-                        <div class="ban_shop"><img src="img/shop_banner11.jpg" alt=""></div>
-                        <div class="ban_shop"><img src="img/shop_banner12.jpg" alt=""></div>
-                        <div class="ban_shop"><img src="img/shop_banner13.jpg" alt=""></div>
-                    </div>
+            <div class="banner_box">
+                <div class="shop_banner">
+                    <div class="ban_shop"><img src="img/shop_banner1.jpg" alt=""></div>
+                    <div class="ban_shop"><img src="img/shop_banner2.jpg" alt=""></div>
+                    <div class="ban_shop"><img src="img/shop_banner3.jpg" alt=""></div>
+                    <div class="ban_shop"><img src="img/shop_banner4.jpg" alt=""></div>
+                    <div class="ban_shop"><img src="img/shop_banner5.jpg" alt=""></div>
+                    <div class="ban_shop"><img src="img/shop_banner6.jpg" alt=""></div>
+                    <div class="ban_shop"><img src="img/shop_banner7.jpg" alt=""></div>
+                    <div class="ban_shop"><img src="img/shop_banner8.jpg" alt=""></div>
+                    <div class="ban_shop"><img src="img/shop_banner9.jpg" alt=""></div>
+                    <div class="ban_shop"><img src="img/shop_banner10.jpg" alt=""></div>
+                    <div class="ban_shop"><img src="img/shop_banner11.jpg" alt=""></div>
+                    <div class="ban_shop"><img src="img/shop_banner12.jpg" alt=""></div>
+                    <div class="ban_shop"><img src="img/shop_banner13.jpg" alt=""></div>
                 </div>
-            
+                <div class="shop_banner">
+                    <div class="ban_shop"><img src="img/shop_banner1.jpg" alt=""></div>
+                    <div class="ban_shop"><img src="img/shop_banner2.jpg" alt=""></div>
+                    <div class="ban_shop"><img src="img/shop_banner3.jpg" alt=""></div>
+                    <div class="ban_shop"><img src="img/shop_banner4.jpg" alt=""></div>
+                    <div class="ban_shop"><img src="img/shop_banner5.jpg" alt=""></div>
+                    <div class="ban_shop"><img src="img/shop_banner6.jpg" alt=""></div>
+                    <div class="ban_shop"><img src="img/shop_banner7.jpg" alt=""></div>
+                    <div class="ban_shop"><img src="img/shop_banner8.jpg" alt=""></div>
+                    <div class="ban_shop"><img src="img/shop_banner9.jpg" alt=""></div>
+                    <div class="ban_shop"><img src="img/shop_banner10.jpg" alt=""></div>
+                    <div class="ban_shop"><img src="img/shop_banner11.jpg" alt=""></div>
+                    <div class="ban_shop"><img src="img/shop_banner12.jpg" alt=""></div>
+                    <div class="ban_shop"><img src="img/shop_banner13.jpg" alt=""></div>
+                </div>
+            </div>
+
         </div>
         <!-- //content -->
         <footer id="footer">
             <div class="footer_link">
-                <ul>
-                    <li><a href="#">ABOUT US</a></li>
-                    <li><a href="#">OUR BEERS</a></li>
-                    <li><a href="#">NEWS</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <li><a href="#">IR</a></li>
-                    <li><a href="#">이용약관</a></li>
-                    <li><a href="#"><span>개인정보 처리방침</span></a></li>
-                    <li><a href="#">영상정보 처리방침</a></li>
-                </ul>
+                <div class="left_link">
+                    <ul>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">OUR BEERS</a></li>
+                        <li><a href="#">NEWS</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#">IR</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#"><span>개인정보 처리방침</span></a></li>
+                        <li><a href="#">영상정보 처리방침</a></li>
+                    </ul>
+                </div>
                 <div class="right_sns">
-                    <div class="youtube"><a href="#"><img src="img/sns-youtube.png" alt=""></a></div>
-                    <div class="facebook"><a href="#"><img src="img/sns_facebook.png" alt=""></a></div>
-                    <div class="insta"><a href="#"><img src="img/sns_instargram.png" alt=""></a></div>
-                    <div class="naver"><a href="#"><img src="img/sns_naver.png" alt=""></a></div>
+                    <ul>
+                        <li><a href="#"><img src="img/sns-youtube.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/sns_facebook.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/sns_instargram.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/sns_naver.png" alt=""></a></li>
+                    </ul>
                 </div>
             </div>
             <div class="address">
@@ -185,6 +209,7 @@
         </footer>
         <!-- //footer -->
     </div>
+    <script src="js/topbtn.js"></script>
 </body>
 
 </html>
