@@ -62,9 +62,7 @@
 #content .buy p{color: #1ecad3; text-align: center; padding: 56px 0 20px 0;}
 
 
-#content .banner_box{width: ; height: 84px; margin-bottom: 133px; overflow: hidden; white-space: nowrap;} 
-/* overflow: hidden; white-space: nowrap; */
-.shop_banner{}
+#content .banner_box{height: 84px; margin-bottom: 133px; overflow: hidden; white-space: nowrap;} 
 #content .shop_banner{animation: marquee 52s linear infinite; transform: translateX(0);}
 #content .shop_banner .ban_shop img{min-height: 59px;height: 59px; padding: 7.5px; float: left;}
 
