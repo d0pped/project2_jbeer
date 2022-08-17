@@ -206,6 +206,17 @@
 .menu_side{display: none;}
 .gnb{display: none;}
 
+.con_right img {    height: 43px;}
+#content .content2 .con_right img {    height: 86px;}
+
+#content .con_box {
+    display: flex;
+    /* height: 591px; */
+    max-width: 1200px;
+    flex-direction: column;
+    align-items: center;
+}
+
 #footer .right_sns{display: none;}
 #footer span .hidden{display: none;}
 }
