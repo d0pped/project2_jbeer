@@ -10,6 +10,7 @@
 .menu_up .logo{display: flex; justify-content: center; width: 400px;}
 .menu_up .logo img{width: 71px;}
 
+
 #header .menu_side{width: 400px;}
 
 #header .up ul{display: flex; justify-content: flex-end;}
@@ -97,7 +98,7 @@
 /* ----------------------------------//content-------------------------------------- */
 
 .swiper {
-    width: 100%;
+    max-width: 1900px;
     height: 100%;
   }
   .swiper h2{
@@ -178,9 +179,8 @@
 ================*/
 
 /* pc, tablet */
-@media screen and (min-width: 991px) and (max-width: 1980px) {
-.MOlogo,
-.MOgnb{display: none;}
+@media screen and (min-width: 991px) and (max-width: 3000px) {
+.MOlogo,.MOgnb{display: none;}
 
 #footer .right_sns{}
 }
@@ -207,6 +207,6 @@
 .gnb{display: none;}
 
 #footer .right_sns{display: none;}
-
+#footer span .hidden{display: none;}
 }
 /* mini */
