@@ -1,3 +1,5 @@
+::selection{background-color: #1ecad3; color: white;}
+
 .container{max-width: 1200px; margin: auto;}
 
 .menu_up{display: flex; align-items: center;justify-content: flex-end;padding: 30px 0;}
@@ -22,8 +24,7 @@
 #header .gnb{text-align: center; clear: both; padding-bottom: 34px;}
 #header .gnb ul{display: flex; justify-content: center;}
 #header .gnb ul li{padding: 0px 50px;}
-#header .gnb ul li span{color: #1ecad3; padding-bottom: 10px;
-    border-bottom: 1px solid #1ecad3;}
+#header .gnb ul li span{color: #1ecad3; padding-bottom: 10px;border-bottom: 1px solid #1ecad3;}
 #header .gnb ul li a{justify-content: center; text-decoration: none; color: #666; font-weight: bold; font-size: 14px;letter-spacing: -0.5px;}
 #header .gnb ul li a:hover{color: rgb(163, 163, 163);}
 
@@ -44,47 +45,56 @@
 .side a img{width: 60px; margin-bottom: 5px;}
 .side .scrolltop{display: none;}
 /* ----------------------------------//sidemenu-------------------------------------- */
+video{width: 100%; margin-top: 38px;}
+.videosrc p{font-size: 24px; color: white; position: absolute; top: 45%; left: 43%;text-align: center;font-weight: bold;}
+.videosrc p span{font-size: 48px; color: white; font-weight: bolder;}
 
 .brewery1{padding-top: 60px; padding-bottom: 60px;}
 .brewery1 p{text-align: center; font-size: 22px;}
-.program h2{text-align: center;color: #1ecad3;}
+.brewery1 p:last-child{text-align: center; font-size: 22px; padding-top: 15px;}
+.program h2{text-align: center;color: #1ecad3; margin: 20px 0;}
 .info h2{text-align: left;}
 
-.swiper {width: 100%;height: 100%;}
 
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
+.program{width: 1200px; display: block; text-align: center; }
+.program h2{}
+.program .text{margin: 45px 0;}
+.programbox{margin-bottom: 50px;}
+.imgbanner{text-align: center;}
+.imgbanner img{width: 500px; margin: 0 auto;}
+.imgbanner .program_ban1{float: left; margin-right: 10px;}
+.imgbanner .program_ban2{float: right; margin-right: 10px;}
+.imgbanner .program_ban1 p{text-align: center;}
+.imgbanner .program_ban2 p{text-align: center;}
+.programbox .link{display: block; text-align: center; clear: both; padding-top: 50px;margin-bottom: 100px;}
+.programbox .link a{width: 39px; margin-top: 50px; text-decoration: none; color: #f4f4f4; text-align: center; padding: 10px 50px; background: #1ecad3;}
+.programbox .link a:hover{background: #29e9f3;}
 
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
 
-  .swiper-slide img {
-    display: block;
-    width: 500px;
-    height: 100%;
-    object-fit: cover;
-  }
+#info{clear: both; background: #f4f4f4; background-size: cover; height: 485px;vertical-align: middle;}
+#info h2{padding: 45px 0 30px 0;line-height: 2; font-weight: bolder;}
+#info h4{font-size: 18px;line-height: 2;}
+#info p{line-height: 1.5;}
+
+#info #infobox{}
+#info img{width: 52px;}
+#info .time{ display: block; width: 380px; float: left; margin-right: 15px;}
+#info h3{margin-bottom: 15px;}
+#info .time h3{border-bottom: 1px solid #666;}
+#info .infomation{ display: block; width: 380px; float: left; margin-right: 15px;}
+#info .infomation h3{border-bottom: 1px solid #666}
+#info .talk{ display: block; width: 380px; float: left;}
+#info .talk h3{border-bottom: 1px solid #666}
+#info .chat{float: left;}
+#info .chatbox{margin-left: 10px; float: left;}
+#info .phone{clear: both;}
 
 /* ----------------------------------//content-------------------------------------- */
 #footer{clear: both; margin-top: 133px; margin-bottom: 50px;}
 
 
 #footer .footer_link ul li{float: left; margin: 0 15px 15px 0; font-size: 14px; height: 40px; padding: 0 15px;}
-.footer_link .left_link {margin-left: 20px;}
+#footer .footer_link .left_link {margin-left: 20px;}
 #footer .footer_link ul li a{text-decoration: none; color: #666;}
 #footer .footer_link ul li a span{font-weight: bold;}
 
@@ -96,8 +106,4 @@
 
 #footer .address{clear: both; font-size: 13px; color: #999;margin: 0 20px; line-height: 2;}
 #footer .address span{clear: both; font-size: 11px;}
-
-
-
-
 /* ----------------------------------//footer-------------------------------------- */

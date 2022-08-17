@@ -1,3 +1,6 @@
+@charset "UTF-8"; 
+::selection{background-color: #1ecad3; color: white;}
+
 .container{max-width: 1200px; margin: auto;}
 
 .menu_up{display: flex; align-items: center;justify-content: flex-end;padding: 30px 0;}
@@ -110,8 +113,28 @@
 
 #footer .address{clear: both; font-size: 13px; color: #999;margin: 0 20px; line-height: 2;}
 #footer .address span{clear: both; font-size: 11px;}
-
-
-
-
 /* ----------------------------------//footer-------------------------------------- */
+
+
+
+
+/* ==============
+    Media Query
+================*/
+
+/* pc, tablet */
+@media screen and (min-width: 991px) and (max-width: 1980px) {
+}
+/* //pc,tablet */
+
+/* phone */
+@media screen and (max-width: 990px) {
+}
+/* //phone */
+
+
+/* mini */
+@media screen and (max-width: 765px) {
+
+}
+/* mini */

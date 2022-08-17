@@ -3,6 +3,7 @@
 ### -----------------------------------------
 #### https://jejubeer.co.kr/ -> 원본 사이트
 #### https://d0pped.github.io/project2_jbeer/ -> 클론 사이트
+#### 서브 페이지 가는 법 -> click BREWERY
 ### -----------------------------------------
 #### version1.1 > marquee, footer 업로드
 #### version1.2 > 2depth, javascript animation 추가
