@@ -36,7 +36,7 @@
 .depth .submenu li {display: inline;}
 .depth .submenu li a {font-size: 14px;display: inline-block;padding: 10px;}
 .depth .submenu li a:hover {background: #1ecad3;color: white !important;}
-.depth .submenu li:last-child a {padding-right: 0;}
+
 
 /* ----------------------------------//header-------------------------------------- */
 .side{position: fixed;top: 83%;right: 1.5%;}
