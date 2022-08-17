@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
 </head>
 
 <body>
@@ -17,6 +21,7 @@
             <div class="container">
                 <div class="menu_up">
                     <div class="logo"><a href="index.html"><img src="img/logo.png" alt=""></a></div>
+                    <div class="MOlogo"><a href="index.html"><img src="img/mq-800px_logo.png" alt=""></a></div>
                     <div class="menu_side">
                         <div class="up">
                             <ul>
@@ -60,6 +65,12 @@
                         </ul>
                     </div>
                 </nav>
+                    <div class="MOgnb">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                
             </div>
             <!-- //headermenu -->
             <div class="side">
@@ -78,8 +89,9 @@
             <div class="content1">
                 <video muted autoplay loop src="img/content_0.mp4"></video>
             </div>
-            <div class="inbox">
-                <div class="content2">
+
+            <div class="content2">
+                <div class="inbox">
                     <div class="con_box">
                         <div class="con_left"><img src="img/content_1beer.png" alt=""></div>
                         <div class="con_right">
@@ -92,8 +104,9 @@
                     </div>
                 </div>
             </div>
-            <div class="inbox">
-                <div class="content3">
+
+            <div class="content3">
+                <div class="inbox">
                     <div class="con_box">
                         <div class="con_left"><img src="img/content_2beer.png" alt=""></div>
                         <div class="con_right">
@@ -106,8 +119,9 @@
                     </div>
                 </div>
             </div>
-            <div class="inbox">
-                <div class="content4">
+
+            <div class="content4">
+                <div class="inbox">
                     <div class="con_box">
                         <div class="con_left"><img src="img/content_3beer.png" alt=""></div>
                         <div class="con_right">
@@ -121,8 +135,9 @@
                     </div>
                 </div>
             </div>
-            <div class="inbox">
-                <div class="content5">
+
+            <div class="content5">
+                <div class="inbox">
                     <div class="con_box">
                         <div class="con_left"><img src="img/content_4beer.png" alt=""></div>
                         <div class="con_right">
@@ -173,6 +188,21 @@
 
         </div>
         <!-- //content -->
+        <div class="swiper">
+            <h2>제주 한달살기</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/swiper1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="img/swiper2.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="img/swiper3.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="img/swiper4.jpg" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+        <!-- //swiper -->
         <footer id="footer">
             <div class="footer_link">
                 <div class="left_link">
@@ -210,7 +240,26 @@
         <!-- //footer -->
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/topbtn.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
 </body>
 
 </html>
